@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 17:10:04 by eardingh          #+#    #+#             */
-/*   Updated: 2022/10/30 11:07:09 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/30 11:23:41 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 /*  ***** ADDED FUNCTIONS *****  */
 void				ft_char_to_base(unsigned char octet, size_t base);
 int					ft_intlen(int *arr);
-char				*get_next_line(int fd);
+char				*ft_get_next_line(int fd);
 
 /*  ***** FIRST PART *****  */
 typedef struct s_list

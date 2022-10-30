@@ -6,13 +6,13 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 10:44:59 by hsaadi            #+#    #+#             */
-/*   Updated: 2022/10/30 11:08:11 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/30 11:23:27 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*get_next_line(int fd)
+char	*ft_get_next_line(int fd)
 {
 	char *str;
 	char *buff;
