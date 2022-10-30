@@ -23,14 +23,14 @@ FTTO = ft_tolower ft_toupper ft_atoi ft_itoa ft_char_to_base
 FTLEN = ft_intlen
 
 
-SRCS = $(addsuffix .c, $(addprefix $(SRCS_PATH)ft_is/, $(FTIS))) \
-	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_lst/, $(FTLST))) \
-	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_mem/, $(FTMEM))) \
-	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_put/, $(FTPUT))) \
-	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_str/, $(FTSTR))) \
-	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_sub/, $(FTSUB))) \
-	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_to/, $(FTTO))) \
-	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_len/, $(FTLEN))) \
+SRCS = $(addsuffix .c, $(addprefix $(SRCS_PATH)is/, $(FTIS))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)lst/, $(FTLST))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)mem/, $(FTMEM))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)put/, $(FTPUT))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)str/, $(FTSTR))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)sub/, $(FTSUB))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)to/, $(FTTO))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)len/, $(FTLEN))) \
 
 OBJS		= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS_SRCS:.c=.o)
