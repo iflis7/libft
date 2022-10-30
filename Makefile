@@ -36,6 +36,7 @@ BONUS_OBJS		= $(BONUS_SRCS:.c=.o)
 
 $(FORMAT): $(OBJS)
 	$(shell c_formatter_42 $(SRCS) $(BONUS_SRCS))
+	$(shell norminette $(SRCS) $(BONUS_SRCS))
 
 $(NAME):	$(OBJS)
 			-@$(AR) $(NAME) $(OBJS) $(FORMAT)
