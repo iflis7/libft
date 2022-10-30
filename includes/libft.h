@@ -6,7 +6,7 @@
 /*   By: hsaadi <hsaadi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 17:10:04 by eardingh          #+#    #+#             */
-/*   Updated: 2022/10/30 10:37:15 by hsaadi           ###   ########.fr       */
+/*   Updated: 2022/10/30 11:07:09 by hsaadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@
 # include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
+#include <stddef.h>
 
 /*  ***** ADDED FUNCTIONS *****  */
 void				ft_char_to_base(unsigned char octet, size_t base);
 int					ft_intlen(int *arr);
-char	*ft_get_next_line(int fd);
+char				*get_next_line(int fd);
 
 /*  ***** FIRST PART *****  */
 typedef struct s_list
@@ -53,7 +54,7 @@ int					ft_atoi(const char *str);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *s1);
 char				*ft_strnstr(const char *haystack, const char *needle,
-					size_t len);
+						size_t len);
 
 /*  ***** SECOND PART *****  */
 
@@ -79,5 +80,5 @@ void				ft_lstdelone(t_list *lst, void (*del)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
-					void (*del)(void *));
+						void (*del)(void *));
 #endif
