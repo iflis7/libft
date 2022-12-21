@@ -8,7 +8,7 @@ HEADER = $(addsuffix .h, $(addprefix includes/, ))
 
 SRCS_PATH = src/
 
-FTIS = alnum alpha ascii digit print metachar \
+FTIS = alnum alpha ascii digit print metachar whitespace \
 
 FTSKIP = space spacenl char chars
 FTLST = add_back add_front clear delone iter last map new size
@@ -34,7 +34,7 @@ SRCS = $(addsuffix .c, $(addprefix $(SRCS_PATH)is/ft_is, $(FTIS))) \
 	$(addsuffix .c, $(addprefix $(SRCS_PATH)tools/, $(TOOLS))) \
 	$(addsuffix .c, $(addprefix $(/libft), $(TEST))) \
 
-OBJS		= $(SRCS:.c=.o)
+OBJS			= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS_SRCS:.c=.o)
 
 $(FORMAT): $(OBJS)
@@ -54,7 +54,14 @@ clean:
 
 fclean:		clean
 			-@$(RM) $(NAME)
+			@echo "\n$(GREEN)$(NAME) cleaned!$(DEFAULT)💯"
 
 re:			fclean all
 
 .PHONY:		all bonus clean fclean re
+
+#COLORS
+RED 	= 	\033[1;31m
+GREEN 	= 	\033[1;32m
+YELLOW 	= 	\033[1;33m
+DEFAULT = 	\033[0m
