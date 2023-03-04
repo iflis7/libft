@@ -1,6 +1,6 @@
 # `Libft`
 
-Your very first own library
+My very first C library
 This project is about coding a C library. It contains a lot of general purpose functions my programs rely upon.. `Version: 10`.<br>
 
 
